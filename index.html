@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동원산업</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script> -->
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- js -->
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <!-- header -->
+  <header class="header top">
+    <div class="logo"><img src="./images/logo/logo.svg" alt="로고"></div>
+    <ul class="gnb">
+      <li>
+        <a href="#!">회사소개</a>
+        <ul class="menu">
+          <li><a href="#!">개요</a></li>
+          <li><a href="#!">연혁</a></li>
+          <li><a href="#!">투자정보</a></li>
+          <li><a href="#!">인재채용</a></li>
+          <li><a href="#!">해상직채용</a></li>
+          <li><a href="#!">생산직채용</a></li>
+          <li><a href="#!">홍보동영상</a></li>
+          <li><a href="#!">디저털브로슈어</a></li>
+        </ul>
+      </li><!--회사소개-->
+      <li>
+        <a href="#!">ESG</a>
+        <ul class="menu">
+          <li><a href="#!">개요</a></li>
+          <li><a href="#!">환경</a></li>
+          <li><a href="#!">사회</a></li>
+          <li><a href="#!">지배구조</a></li>
+          <li><a href="#!">이니셔티브</a></li>
+          <li><a href="#!">인증</a></li>
+          <li><a href="#!">보고서</a></li>
+        </ul>
+      </li><!--ESG-->
+      <li>
+        <a href="#!">수산</a>
+        <ul class="menu">
+          <li><a href="#!">개요</a></li>
+          <li><a href="#!">수산사업</a></li>
+          <li><a href="#!">항만사업</a></li>
+          <li><a href="#!">해양수산소식</a></li>
+          <li><a href="#!">사업장소개</a></li>
+        </ul>
+      </li><!--수산-->
+      <li>
+        <a href="#!">유통</a>
+        <ul class="menu">
+          <li><a href="#!">개요</a></li>
+          <li><a href="#!">유통사업</a></li>
+          <li><a href="#!">제품소개</a></li>
+          <li><a href="#!">사업장소개</a></li>
+        </ul>
+      </li><!--유통-->
+      <li>
+        <a href="#!">냉장물류</a>
+        <ul class="menu">
+          <li><a href="#!">냉장물류</a></li>
+          <li><a href="#!">물류정보시스템</a></li>
+          <li><a href="#!">주요인증 및 수상내역</a></li>
+          <li><a href="#!">사업장소개</a></li>
+        </ul>
+      </li><!--냉장-->
+      <li><a href="#!">계열사</a></li>
+      <li><a href="#!">IR</a></li>
+      <li>
+        <a href="#!">고객센터</a>
+        <ul class="menu">
+          <li><a href="#!">동원뉴스</a></li>
+          <li><a href="#!">고객의소리</a></li>
+        </ul>
+      </li><!--고객센터-->
+    </ul><!--gnb-->
+    <div class="search-box">
+      <input type="search">
+    </div>
+    <div class="menu-bg">
+    </div>
+  </header>
+
+  <!-- visual main -->
+  <div class="visual-main swiper" data-speed="0.3">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-swiper-autoplay="19000">
+        <div class="video-on">
+          <p class="video-txt">
+            새로운 가치를 창조하는 사회 필요 기업
+          </p>
+          <p class="video-dongwon">동원산업</p>
+        </div><!--video on-->
+        <video src="./media/globe-2025-new.mp4" autoplay muted></video>
+      </div><!--swiper slide-->
+      <div class="swiper-slide" data-swiper-autoplay="12012">
+        <div class="video-on">
+          <p class="video-txt">
+            고객을 위해, 사회를 위해 함께 나누는 기업
+          </p>
+          <p class="video-dongwon">동원산업</p>
+        </div><!--video on-->
+        <video src="./media/cover.mp4" muted></video>
+      </div><!--swiper slide-->
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="video-control-btn">
+      <i class='fa-solid fa-pause'></i>
+    </div>
+  </div><!--visual main-->
+
+  <!-- intro -->
+  <div class="intro-page">
+    <p class="intro-txt">
+      동원은<br>희망찬 미래의 바다를 개척합니다.
+    </p>
+  </div>
+
+  <!-- business -->
+  <section class="business-section">
+    <div class="section-txt">
+      <p class="section-title">사업 소개</p>
+      <p class="section-sub-title">
+        무한한 바다의 가치를<br>식탁으로 전합니다
+      </p>
+    </div><!--section txt-->
+    
+    <div class="business-frame">
+      <!-- fisheries -->
+      <div class="business fisheries">
+        <div class="business-bg">
+          <div class="business-txt">
+            <p class="business-title">해양 수산</p>
+            <p class="business-intro">블루오션에 희망을 더하다!</p>
+            <a class="enter-btn" href="#!">바로가기 &RightArrow;</a>
+          </div><!--businesss txt-->
+          <div class="business-info">
+            <p>세계 최대<br>참치 선망 선단 운영</p>
+            <p>고부가가치<br>제품 생산</p>
+            <p>국내 최초<br>MSC 어업 인증 휙득</p>
+            <p>선단 현대화<br>어군탐지 드론 도입</p>
+          </div>
+        </div>
+      </div><!--fisheries-->
+  
+      <!-- trade -->
+      <div class="business trade">
+        <div class="business-bg">
+          <div class="business-txt">
+            <p class="business-title">유통</p>
+            <p class="business-intro">바다를 담다!</p>
+            <a class="enter-btn" href="#!">바로가기 &RightArrow;</a>
+          </div><!--businesss txt-->
+          <div class="business-info">
+            <p>Super<br>Seafood Provider</p>
+            <p>일본 및 유럽,<br>미주 시장 개척</p>
+            <p>세계 거점 네트워크<br>기반 Global<br>Sourcing 역량</p>
+          </div>
+        </div>
+      </div><!--trade-->
+  
+      <!-- chain -->
+      <div class="business chain">
+        <div class="business-bg">
+          <div class="business-txt">
+            <p class="business-title">냉장물류</p>
+            <p class="business-intro">신선함의 가치를 그대로!</p>
+            <a class="enter-btn" href="#!">바로가기 &RightArrow;</a>
+          </div><!--businesss txt-->
+          <div class="business-info">
+            <p>자동화 저온물류<br>거점 운영</p>
+            <p>49년 노하우 및<br> 전문 인력</p>
+            <p>감천항 배후부지에<br>위치해 항만물류와의<br>시너지 창출</p>
+          </div>
+        </div>
+      </div><!--chain-->
+    </div>
+  </section>
+
+  <!-- esg -->
+  <section class="esg-section down-scroll">
+    <div class="esg-bg">
+      <div class="section-txt">
+        <p class="section-title">ESG 전략</p>
+        <p class="section-sub-title">
+          더 나은 미래를<br>위한 책임 ‘동원’
+        </p>
+        <p class="section-intro">
+          동원산업은 동원그룹의 지속가능경영을 이끌고<br>사회필요기업의 가치를 지켜나가고 있습니다.
+        </p>
+      </div><!--section txt-->
+      
+      <div class="esg-frame">
+        <div class="esg">
+          <div class="esg-title">
+            <p>환경</p>
+            <a href="#!" class="enter-btn">바로가기 &rightarrow;</a>
+          </div>
+          <p class="esg-txt">
+            동원산업은 해양 및 사업장 인근 환경 영향 관리를 위한 노력을 지속하겠습니다.<br>수산업에 근간한 비즈니스를 운영하고 있는 동원산업은 조업 해역(태평양, 대서양 등)의 지역수산관리기구 지침에 의거하여 생태계 영향을 최소화하기 위해 노력하고 있으며, 사업장에서 발생하는 환경영향을 적법하게 관리하고 있습니다.
+          </p>
+        </div><!--환경-->
+        <div class="esg">
+          <div class="esg-title">
+            <p>사회</p>
+            <a href="#!" class="enter-btn">바로가기 &rightarrow;</a>
+          </div>
+          <p class="esg-txt">
+            동원산업은 경쟁력의 원천인 동원인과 미래를 함께 만들어 갑니다.<br>
+            체계적이고 투명한 인사제도를 통해 인재를 유치하고, 사람존중의 육성과 성장으로 전문성 함양을 적극 지원하며, 다양한 소통 및 복지제도에 기반하여 동원인의 행복을 위해 ‘동행’하고 있습니다.
+          </p>
+        </div><!--사회-->
+        <div class="esg">
+          <div class="esg-title">
+            <p>지배구조</p>
+            <a href="#!" class="enter-btn">바로가기 &rightarrow;</a>
+          </div>
+          <p class="esg-txt">
+            동원산업은 동원그룹의 지주사로서 건전하고 투명한 기업지배구조를 구축하였습니다.<br>
+            동원그룹은 지난 50여 년을 넘어 새로운 50년을 위하여 그룹 지배구조를 재편하고, 지주사로서 동원산업의 위상을 공고히 하였으며, 독립적이고 분야별 전문성이 뛰어난 이사들로 구성된 이사회 및 산하 위원회를 운영하고 있습니다.
+          </p>
+        </div><!--지배구조-->
+      </div><!--esg frame-->
+    </div>
+  </section>
+
+  <!-- global top -->
+  <section class="global-top-section">
+    <div class="section-txt">
+      <p class="section-title">글로벌 네트워크</p>
+      <p class="section-sub-title">
+        동원은 세계지도를 거꾸로 봅니다.
+      </p>
+    </div><!--section txt-->
+
+    <div class="global-table">
+      <div class="global">
+        <div class="global-bg">
+          <p class="global-title">부산 냉동창고</p>
+          <p class="global-num">4개소</p>
+          <p class="global-location">부산항, 부산신항, 이천, 성남</p>
+        </div>
+      </div><!--global-->
+      <div class="global">
+        <div class="global-bg">
+          <p class="global-title">항만거점</p>
+          <p class="global-num">6개소</p>
+          <p class="global-location">부산, 인천, 울산, 당진, 동해, 광양</p>
+        </div>
+      </div><!--global-->
+      <div class="global">
+        <div class="global-bg">
+          <p class="global-title">공장</p>
+          <p class="global-num">4개소</p>
+          <p class="global-location">부산, A.samoa, Ecuador, Senegal</p>
+        </div>
+      </div><!--global-->
+      <div class="global">
+        <div class="global-bg">
+          <p class="global-title">물류센터</p>
+          <p class="global-num">57개소</p>
+          <p class="global-location">동원 로엑스 54개, BIDC 3개</p>
+        </div>
+      </div><!--global-->
+      <div class="global-logo">
+        <img src="./images/logo/logo.png" alt="로고">
+      </div>
+    </div>
+  </section>
+
+  <!-- global bottom -->
+  <section class="global-bottom-section">
+    <div class="global-bottom-bg">
+    </div>
+    <div class="section-txt">
+      <p class="section-title">글로벌 네트워크</p>
+      <p class="section-intro">
+        세계지도를 거꾸로 보면, 한반도는 유라시아 대륙을 발판으로 태평양을 향해 힘차게 솟구쳐 있습니다.
+      </p>
+    </div><!--section txt-->
+
+    <div class="flag-table">
+      <div class="flag select-flag">
+        <img src="./images/global/US.jpg" alt="미국">
+        <p>StarKist HQ(Reston) / DW Global Inc.(동부) / StarKist 물류기지(LA) / Packaging Distribution Center / DW Global Inc. (서부) / A. Samoa (미국령) / StarKist Samoa Co. 참치캔, 파우치생산 (세계최대규모)</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/EC.jpg" alt="에콰도르">
+        <p>GALAPESCA (StarKist 자회사) 생산공장</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/FM.jpg" alt="마이크로네시아">
+        <p>Pohnpei (마이크로네시아) 태평양원양 전진기지</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/JP.jpg" alt="일본">
+        <p>Dongwon Japan</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/KO.jpg" alt="한국">
+        <p>동원산업 본사 / K Smart Farming (양식법인)</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/CN.jpg" alt="중국">
+        <p>동원식품(상해) 유한공사 / 위해삼조식품</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/VN.jpg" alt="베트남">
+        <p>Dongwon F&B Vietnam</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/SC.jpg" alt="세이셸">
+        <p>Seychelles 인도양원양 전진기지</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/SN.jpg" alt="세네갈">
+        <p>SCASA (참치가공법인) / CAPSEN (참치조업법인)</p>
+      </div>
+      <div class="flag">
+        <img src="./images/global/NO.jpg" alt="노르웨이">
+        <p>Salmon Evolution (연어양식법인)</p>
+      </div>
+      <div class="global-info">
+        StarKist HQ(Reston) / DW Global Inc.(동부) / StarKist 물류기지(LA) / Packaging Distribution Center / DW Global Inc. (서부) / A. Samoa (미국령) / StarKist Samoa Co. 참치캔, 파우치생산 (세계최대규모)
+      </div>
+    </div><!--flag table-->
+  </section>
+
+  <!-- history -->
+  <section class="history-section down-scroll">
+    <div class="section-txt">
+      <p class="section-title">연혁</p>
+    </div><!--section txt-->
+
+    <div class="history-frame">
+      <p class="history-title">
+        창업기
+      </p><!--history title-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">1969. 04</p>
+          <p class="history-info">
+            동원산업 설립
+          </p>
+          <div class="history-img">
+            <img src="./images/history/1969.04.jpg" alt="동원산업 설립">
+          </div>
+        </div>
+      </div><!--history-->
+      <p class="history-title">
+        성장기
+      </p><!--history title-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">1982. 11</p>
+          <p class="history-info">
+            참치 통조림 국내시장 최초출시
+          </p>
+          <div class="history-img">
+            <img src="./images/history/1982.11.jpg" alt="동원산업 설립">
+          </div>
+        </div>
+      </div><!--history-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">1989. 03</p>
+          <p class="history-info">
+            동원산업, 한국증권거래소 상장
+          </p>
+        </div>
+      </div><!--history-->
+      <p class="history-title">
+        성숙기
+      </p>
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">1996. 04</p>
+          <p class="history-info">
+            동원그룹 공식 출범
+          </p>
+          <div class="history-img">
+            <img src="./images/history/1996.04.jpg" alt="동원그룹 공식 출범">
+          </div>
+        </div>
+      </div><!--history-->
+      <p class="history-title">
+        도약기
+      </p>
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">2008. 10</p>
+          <p class="history-info">
+            미국 최대 참치 브랜드 STARKIST 인수
+          </p>
+          <div class="history-img">
+            <img src="./images/history/2008.10.jpg" alt="STARKIST 인수">
+          </div>
+        </div>
+      </div><!--history-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">2011. 12</p>
+          <p class="history-info">
+            세네갈 S.C.A SA 인수 (아프리카 최대 참치캔 공장)
+          </p>
+        </div>
+      </div><!--history-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">2013. 10</p>
+          <p class="history-info">
+            세네갈 S.C.A SA 공장 준공
+          </p>
+          <div class="history-img">
+            <img src="./images/history/2013.10.jpg" alt="S.C,A.SA 공장 준공">
+          </div>
+        </div>
+      </div><!--history-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">2018. 11</p>
+          <p class="history-info">
+            동원산업, 부산신항 최대 물류기업 BIDC 인수
+          </p>
+          <div class="history-img">
+            <img src="./images/history/2018.11.jpg" alt="BIDC 인수">
+          </div>
+        </div>
+      </div><!--history-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">2020. 07</p>
+          <p class="history-info">
+            노르웨이 Salmon Evolution 지분투자
+          </p>
+        </div>
+      </div><!--history-->
+      <div class="history">
+        <div class="history-txt">
+          <p class="date">2022. 02</p>
+          <p class="history-info">
+            동원산업 KMAC 2022 한국에서 가장 존경받는 기업 선정
+          </p>
+        </div>
+      </div><!--history-->
+      <div class="line"></div>
+    </div><!--history frame-->
+  </section>
+
+  <!-- news -->
+  <section class="news-section">
+    <div class="section-txt">
+      <p class="section-title">뉴스</p>
+    </div><!--section txt-->
+    <div class="news-box">
+      <div class="news">
+        <div class="news-img">
+          <img src="./images/news/news_01.JPG" alt="뉴스1">
+        </div>
+        <p class="news-title">
+          동원산업, 30g씩 소포장해 편의성 높인 ‘짜먹는 간편 명란’ 출시
+        </p>
+      </div><!--news-->
+      <div class="news">
+        <div class="news-img">
+          <img src="./images/news/news_02.JPG" alt="뉴스2">
+        </div>
+        <p class="news-title">
+          현대차·기아와 폐어망 재활용 협력… ‘해양 생태계 보전 앞장’
+        </p>
+      </div><!--news-->
+      <div class="news">
+        <div class="news-img">
+          <img src="./images/news/news_03.JPG" alt="뉴스3">
+        </div>
+        <p class="news-title">
+          지속가능한 해양 생태계 위한 ‘국제 해안 클린업데이’ 행사 진행
+        </p>
+      </div><!--news-->
+      <div class="news">
+        <div class="news-img">
+          <img src="./images/news/news_04.jpg" alt="뉴스4">
+        </div>
+        <p class="news-title">
+          동원산업, 100만원 참치회 세트 ‘동원 북대서양 참다랑어 명품 세트’ 사전 예약 완판
+        </p>
+      </div><!--news-->
+    </div><!--news box-->
+    <a href="#!" class="enter-btn">전체 보기</a>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="logo-box">
+      <div class="footer-logo">
+        <img src="./images/logo/foot_marc04.png" alt="SAFE">
+      </div>
+      <div class="footer-logo">
+        <img src="./images/logo/foot_marc05.png" alt="로고">
+      </div>
+      <div class="footer-logo">
+        <img src="./images/logo/foot_marc06.png" alt="ISSF">
+      </div>
+    </div><!--logo box-->
+    <div class="footer-txt">
+      <ul class="footer-menu">
+        <li><a href="#!">개인정보처리방침</a></li>
+        <li><a href="#!">법적고지</a></li>
+        <li><a href="#!">이메일무단수집금지</a></li>
+        <li><a href="#!">정도경영신고센터</a></li>
+        <li><a href="#!">제휴문의</a></li>
+        <li><a href="#!">인재채용</a></li>
+        <li><a href="#!">오시는 길</a></li>
+        <li>
+          <select>
+            <option>그룹사 전체보기</option>
+          </select>
+        </li>
+      </ul>
+      <div class="footer-info">
+        <p>
+          서울특별시 서초구 마방로 68 (서초구 양재동 275) 06775 동원산업㈜
+        </p>
+        <p>
+          COPYRIGHT ©2014 DONGWON INDUSTRIES. ALL RIGHTS RESERVED
+        </p>
+      </div><!--footer info-->
+      <div class="company-logo">
+        <img src="./images/logo/foot_marc02.gif" alt="StarKist & SCASA">
+      </div>
+    </div><!--footer txt-->
+  </footer>
+</body>
+</html>
