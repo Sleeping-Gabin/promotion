@@ -13,15 +13,11 @@
 [배포 주소](https://sleeping-gabin.github.io/promotion/)   
 <br>
 
-### 기획서
-[기획서](https://github.com/Sleeping-Gabin/promotion/raw/main/plan_promotion.pdf)  
-<br>
-
 ### 사용 기술
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![scss](https://img.shields.io/badge/scss-CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
 ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
-![gsap](https://img.shields.io/badge/gsap-0AE448.svg?style=for-the-badge&logo=gsap&logoColor=white)  
+![gsap](https://img.shields.io/badge/gsap-0e100f.svg?style=for-the-badge&logo=gsap&logoColor=0AE448)  
 <br>
 
 ### 프로젝트 진행 과정
@@ -31,7 +27,7 @@
 <br><br>
 
 ## 페이지
-메인 페이지  
+### 메인 페이지  
 |![비주얼 메인](https://github.com/user-attachments/assets/14c353a9-500a-4c72-a3f1-8722feaad979)|![글로벌](https://github.com/user-attachments/assets/6f3c6ca2-779b-46c0-88d5-fa37f591ea61)|![연혁](https://github.com/user-attachments/assets/59a0f26c-fcf6-4409-ab61-f37ac1070763)|  
 |:------------:|:---------:|:------:|  
 
@@ -39,7 +35,8 @@
 
 ## 구현 내용
 ### 사업 소개 슬라이드
-![사업 소개](https://github.com/user-attachments/assets/5d76e5e3-86b7-46ca-8101-651f27f050fe)
+사업 소개 섹션에서 아래로 스크롤 시 사업 아이템이 가로로 슬라이드 된다.  
+마지막 아이템일시 배경이 기존 상태로 돌아간다.  
 
 <details>
 <summary>코드 보기</summary>
@@ -83,12 +80,12 @@ function viewNextInfo() {
 ```
 </details>
 
-사업 소개 섹션에서 아래로 스크롤 시 사업 아이템이 가로로 슬라이드 된다.  
-마지막 아이템일시 배경이 기존 상태로 돌아간다.  
+![사업 소개](https://github.com/user-attachments/assets/f0d1c686-179d-4b76-a1b2-05c5a3e5dafb)  
 <br>
 
 ### ESG 섹션 스크롤
-![ESG](https://github.com/user-attachments/assets/6305332f-753f-4437-a631-1804d5ee272e)
+스크롤 방향과 경계로 시작과 끝 상태를 판단해서 다음 섹션으로 넘어갈 수 있게 하였다.  
+섹션 스크롤 시 일부의 내부 콘텐츠가 스크롤 된다.  
 
 <details>
 <summary>코드 보기</summary>
@@ -146,6 +143,5 @@ function scrollEsg() {
 ```
 </details>
 
-스크롤 방향과 경계로 시작과 끝 상태를 판단해서 다음 섹션으로 넘어갈 수 있게 하였다.  
-섹션 스크롤 시 일부의 내부 콘텐츠가 스크롤 된다.  
+![ESG](https://github.com/user-attachments/assets/361ebb34-aab5-43e1-a9dd-ec42eca68d21)  
 <br>
